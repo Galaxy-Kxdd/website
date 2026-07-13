@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Blommas Cocktail &amp; Eatery</title>
+  <meta name="description" content="Browse the full food and cocktail menu at Blommas Cocktail & Eatery — starters, mains, desserts, cocktails and more." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="21" cy="21" r="21" fill="#FBE1EA"/>
+          <g fill="#E28FA8">
+            <ellipse cx="21" cy="12" rx="7" ry="9"/>
+            <ellipse cx="21" cy="30" rx="7" ry="9"/>
+            <ellipse cx="12" cy="21" rx="9" ry="7"/>
+            <ellipse cx="30" cy="21" rx="9" ry="7"/>
+          </g>
+          <circle cx="21" cy="21" r="6" fill="#B84E75"/>
+          <g fill="#1F3D3D">
+            <path d="M27 14 L31 10 L33 14 L29 16 Z"/>
+            <path d="M31 18 L36 16 L36 20 L32 21 Z"/>
+          </g>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-title">Blommas</span>
+          <span class="logo-sub">Cocktail &amp; Eatery</span>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="booking.html">Reservations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary nav-cta">Book a Table</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">The Menu</span>
+        <h1>Food &amp; Drink</h1>
+        <p>Seasonal plates and craft cocktails, made for sharing. Menu changes with the seasons — ask your server about specials.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:48px;">
+      <div class="container">
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-target="starters">Starters</button>
+          <button class="menu-tab" data-target="mains">Mains</button>
+          <button class="menu-tab" data-target="desserts">Desserts</button>
+          <button class="menu-tab" data-target="cocktails">Cocktails</button>
+          <button class="menu-tab" data-target="wine">Mocktails &amp; Wine</button>
+        </div>
+
+        <div id="starters" class="menu-category active">
+          <h3>Starters</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Charred Octopus <span class="tag">Chef's Pick</span></h4>
+                <p>Smoked paprika, fingerling potato, salsa verde.</p>
+              </div>
+              <div class="dish-price">$18</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Burrata &amp; Heirloom Tomato <span class="tag teal">Vegetarian</span></h4>
+                <p>Basil oil, aged balsamic, grilled sourdough.</p>
+              </div>
+              <div class="dish-price">$16</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Crispy Brussels Sprouts <span class="tag teal">Vegan Option</span></h4>
+                <p>Calabrian chili honey, shaved pecorino.</p>
+              </div>
+              <div class="dish-price">$13</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Tuna Tartare</h4>
+                <p>Avocado, yuzu, sesame, taro chip.</p>
+              </div>
+              <div class="dish-price">$19</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mains" class="menu-category">
+          <h3>Mains</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Seared Scallops <span class="tag">Chef's Pick</span></h4>
+                <p>Brown butter, blood orange, crisped sage.</p>
+              </div>
+              <div class="dish-price">$34</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Braised Short Rib</h4>
+                <p>Celeriac purée, red wine jus, charred scallion.</p>
+              </div>
+              <div class="dish-price">$36</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Roasted Half Chicken</h4>
+                <p>Fingerling potatoes, salsa verde, pan jus.</p>
+              </div>
+              <div class="dish-price">$29</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Wild Mushroom Risotto <span class="tag teal">Vegetarian</span></h4>
+                <p>Truffle, parmesan, crispy shallot.</p>
+              </div>
+              <div class="dish-price">$26</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="desserts" class="menu-category">
+          <h3>Desserts</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Brown Butter Tart</h4>
+                <p>Toasted almond, honeycomb, crème fraîche.</p>
+              </div>
+              <div class="dish-price">$12</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Dark Chocolate Torte</h4>
+                <p>Espresso cream, flaked sea salt.</p>
+              </div>
+              <div class="dish-price">$12</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Seasonal Sorbet Trio <span class="tag teal">Vegan</span></h4>
+                <p>Ask your server for today's flavors.</p>
+              </div>
+              <div class="dish-price">$9</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cocktails" class="menu-category">
+          <h3>Cocktails</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Rose Spritz <span class="tag">Signature</span></h4>
+                <p>Gin, hibiscus, grapefruit, sparkling rosé.</p>
+              </div>
+              <div class="dish-price">$16</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Blommas Old Fashioned</h4>
+                <p>Bourbon, blood orange bitters, smoked cherry.</p>
+              </div>
+              <div class="dish-price">$17</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Teal Hour</h4>
+                <p>Mezcal, blue curaçao, lime, chili salt rim.</p>
+              </div>
+              <div class="dish-price">$16</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Peony Fizz</h4>
+                <p>Vodka, elderflower, lemon, egg white foam.</p>
+              </div>
+              <div class="dish-price">$15</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="wine" class="menu-category">
+          <h3>Mocktails &amp; Wine</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Garden Fizz <span class="tag teal">Mocktail</span></h4>
+                <p>Cucumber, mint, lime, soda.</p>
+              </div>
+              <div class="dish-price">$8</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>Sparkling Hibiscus <span class="tag teal">Mocktail</span></h4>
+                <p>Hibiscus, ginger, soda, lime.</p>
+              </div>
+              <div class="dish-price">$8</div>
+            </div>
+            <div class="dish">
+              <div class="dish-info">
+                <h4>House Red / White</h4>
+                <p>Rotating by-the-glass selection — ask your server.</p>
+              </div>
+              <div class="dish-price">$12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="container text-center">
+        <a href="booking.html" class="btn btn-primary">Book a Table to Try It</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="21" cy="21" r="21" fill="#2A4E4E"/>
+              <g fill="#E28FA8">
+                <ellipse cx="21" cy="12" rx="7" ry="9"/>
+                <ellipse cx="21" cy="30" rx="7" ry="9"/>
+                <ellipse cx="12" cy="21" rx="9" ry="7"/>
+                <ellipse cx="30" cy="21" rx="9" ry="7"/>
+              </g>
+              <circle cx="21" cy="21" r="6" fill="#B84E75"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-title">Blommas</span>
+              <span class="logo-sub">Cocktail &amp; Eatery</span>
+            </span>
+          </a>
+          <p>Modern eatery &amp; cocktail bar serving seasonal small plates and craft drinks in the heart of the city.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booking.html">Reservations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li>Tue–Thu: 5pm – 11pm</li>
+            <li>Fri–Sat: 5pm – 1am</li>
+            <li>Sun: 4pm – 10pm</li>
+            <li>Mon: Closed</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li>123 Garden Lane, Your City</li>
+            <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+            <li><a href="mailto:hello@blommas.com">hello@blommas.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Blommas Cocktail &amp; Eatery. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
