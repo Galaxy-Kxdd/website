@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reservations — Blommas Cocktail &amp; Eatery</title>
-  <meta name="description" content="Book a table at Blommas Cocktail & Eatery. Request your reservation online in under a minute." />
+  <title>Private Events — Blommas Cocktail &amp; Eatery</title>
+  <meta name="description" content="Host your next celebration at Blommas Cocktail & Eatery — semi-private dining, full buyouts and cocktail receptions." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -36,8 +36,8 @@
         <ul class="nav-links">
           <li><a href="menu.html">Menu</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Private Events</a></li>
-          <li><a href="booking.html" class="active">Reservations</a></li>
+          <li><a href="events.html" class="active">Private Events</a></li>
+          <li><a href="booking.html">Reservations</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -53,9 +53,50 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Reservations</span>
-        <h1>Book a Table</h1>
-        <p>Tell us when you'd like to visit and we'll confirm your table by phone or email. For parties of 8 or more, please call us directly.</p>
+        <span class="eyebrow">Private Events</span>
+        <h1>Celebrate at Blommas</h1>
+        <p>From a semi-private dinner to a full buyout, our team will build a menu and room to match your occasion.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:48px;">
+      <div class="container two-col reveal">
+        <div class="ph" style="aspect-ratio:4/3; border-radius:var(--radius-lg);"><span>Photo: Private Dining Room</span></div>
+        <div>
+          <span class="eyebrow">How It Works</span>
+          <h2>A room — and a menu — built around you.</h2>
+          <p style="color:var(--ink-light);">Whether it's a birthday, engagement, holiday party or corporate dinner, our events team works with you on seating, seasonal menus and a cocktail list tailored to the occasion. Tell us the shape of your event below and we'll follow up with availability and pricing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--pink-50);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Packages</span>
+          <h2>Find Your Fit</h2>
+          <p>Every package includes a dedicated server, custom menu planning and a tasting prior to your event.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Semi-Private Dining</h3>
+              <p>Our alcove seats up to 20 guests, separated from the main room — full food and cocktail menu available.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Full Restaurant Buyout</h3>
+              <p>Reserve the entire space for up to 60 seated guests. Ideal for weddings, milestone birthdays and corporate events.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Cocktail Reception</h3>
+              <p>Standing reception for up to 80 guests with passed small plates and a curated cocktail menu.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -64,75 +105,73 @@
         <div class="form-card reveal">
           <div id="form-status" class="form-status" role="status"></div>
 
-          <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form id="booking-form" action="https://formspree.io/f/YOUR_EVENTS_FORM_ID" method="POST" novalidate>
             <div class="form-row">
               <div class="field">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required />
+                <label for="ev-name">Full Name</label>
+                <input type="text" id="ev-name" name="name" required />
                 <span class="field-error">Please enter your name.</span>
               </div>
               <div class="field">
-                <label for="party-size">Party Size</label>
-                <select id="party-size" name="party_size" required>
+                <label for="ev-type">Event Type</label>
+                <select id="ev-type" name="event_type" required>
                   <option value="">Select…</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7+ (call us)</option>
+                  <option>Birthday</option>
+                  <option>Engagement / Wedding</option>
+                  <option>Corporate</option>
+                  <option>Holiday Party</option>
+                  <option>Other Celebration</option>
                 </select>
-                <span class="field-error">Please select a party size.</span>
+                <span class="field-error">Please select an event type.</span>
               </div>
             </div>
 
             <div class="form-row">
               <div class="field">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required />
+                <label for="ev-date">Preferred Date</label>
+                <input type="date" id="ev-date" name="date" required />
                 <span class="field-error">Please choose a date.</span>
               </div>
               <div class="field">
-                <label for="time">Time</label>
-                <input type="time" id="time" name="time" required />
-                <span class="field-error">Please choose a time.</span>
+                <label for="ev-guests">Estimated Guest Count</label>
+                <input type="number" id="ev-guests" name="guest_count" min="1" required />
+                <span class="field-error">Please enter a guest count.</span>
               </div>
             </div>
 
             <div class="form-row">
               <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                <label for="ev-email">Email</label>
+                <input type="email" id="ev-email" name="email" required />
                 <span class="field-error">Please enter a valid email.</span>
               </div>
               <div class="field">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" required />
+                <label for="ev-phone">Phone</label>
+                <input type="tel" id="ev-phone" name="phone" required />
                 <span class="field-error">Please enter a phone number.</span>
               </div>
             </div>
 
             <div class="field">
-              <label for="notes">Special Requests <span style="font-weight:400; color:var(--ink-light);">(optional)</span></label>
-              <textarea id="notes" name="notes" placeholder="Allergies, celebrations, seating preferences…"></textarea>
+              <label for="ev-notes">Tell Us About Your Event <span style="font-weight:400; color:var(--ink-light);">(optional)</span></label>
+              <textarea id="ev-notes" name="notes" placeholder="Budget, catering preferences, timing, anything else we should know…"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">Request Reservation</button>
+            <button type="submit" class="btn btn-primary btn-block">Send Event Inquiry</button>
           </form>
         </div>
 
         <div class="reveal">
           <span class="eyebrow">Good to Know</span>
-          <h2>Plan Your Visit</h2>
+          <h2>Planning Details</h2>
           <div class="info-list mt-lg">
             <div class="item">
               <div class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
               </div>
               <div>
-                <h4>Hours</h4>
-                <p>Tue–Thu 5pm–11pm · Fri–Sat 5pm–1am · Sun 4pm–10pm · Closed Mondays</p>
+                <h4>Capacity</h4>
+                <p>Semi-private up to 20, full buyout up to 60 seated, or 80 for a standing reception.</p>
               </div>
             </div>
             <div class="item">
@@ -140,26 +179,17 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M8 4v5"/><path d="M16 4v5"/></svg>
               </div>
               <div>
-                <h4>Confirmation</h4>
-                <p>We confirm every request personally within 24 hours by phone or email.</p>
+                <h4>Lead Time</h4>
+                <p>We recommend booking events at least 3 weeks in advance to guarantee your date.</p>
               </div>
             </div>
             <div class="item">
               <div class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
               </div>
               <div>
-                <h4>Large Parties &amp; Events</h4>
-                <p>For groups of 8+ or private events, please call (000) 000-0000.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <h4>Location</h4>
-                <p>123 Garden Lane, Your City — street parking &amp; nearby garage available.</p>
+                <h4>Response Time</h4>
+                <p>Our events team replies to every inquiry within 2 business days with availability and a quote.</p>
               </div>
             </div>
           </div>
