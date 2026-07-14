@@ -124,28 +124,14 @@ section { padding: 96px 0; }
 .btn-block { width: 100%; }
 
 /* ---------- Logo ---------- */
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo svg { flex-shrink: 0; }
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
+.logo { display: flex; align-items: center; }
+.logo-img {
+  height: 96px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
 }
-.logo-text .logo-title {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  letter-spacing: 0.04em;
-  font-weight: 700;
-  color: var(--ink);
-}
-.logo-text .logo-sub {
-  font-size: 0.6rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--pink-500);
-  font-weight: 600;
-  margin-top: 4px;
-}
+.footer-brand .logo-img { height: 110px; }
 
 /* ---------- Header / Nav ---------- */
 .site-header {
