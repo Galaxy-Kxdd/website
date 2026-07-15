@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blommas Cocktail &amp; Eatery — Modern Eatery &amp; Cocktail Bar</title>
   <meta name="description" content="Blommas Cocktail & Eatery — seasonal small plates and craft cocktails. Book a table or browse our menu online." />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -12,30 +13,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="21" cy="21" r="21" fill="#FBE1EA"/>
-          <g fill="#E28FA8">
-            <ellipse cx="21" cy="12" rx="7" ry="9"/>
-            <ellipse cx="21" cy="30" rx="7" ry="9"/>
-            <ellipse cx="12" cy="21" rx="9" ry="7"/>
-            <ellipse cx="30" cy="21" rx="9" ry="7"/>
-          </g>
-          <circle cx="21" cy="21" r="6" fill="#B84E75"/>
-          <g fill="#1F3D3D">
-            <path d="M27 14 L31 10 L33 14 L29 16 Z"/>
-            <path d="M31 18 L36 16 L36 20 L32 21 Z"/>
-          </g>
-        </svg>
-        <span class="logo-text">
-          <span class="logo-title">Blommas</span>
-          <span class="logo-sub">Cocktail &amp; Eatery</span>
-        </span>
+        <img src="assets/logo.png" alt="Blommas Cocktail &amp; Eatery logo" class="logo-img">
       </a>
 
       <nav class="main-nav">
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Private Events</a></li>
           <li><a href="booking.html">Reservations</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -126,6 +111,39 @@
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Guest Reviews</span>
+          <h2>What People Are Saying</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card reveal">
+            <div class="card-body">
+              <div style="color:var(--pink-500); margin-bottom:12px; letter-spacing:2px;">★★★★★</div>
+              <p style="font-style:italic; color:var(--ink);">"Best cocktail bar in the neighborhood. The Rose Spritz alone is worth the visit — and the scallops are unreal."</p>
+              <p style="color:var(--ink-light); font-size:0.85rem; margin-top:12px;">— Sample review, replace with real feedback</p>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="card-body">
+              <div style="color:var(--pink-500); margin-bottom:12px; letter-spacing:2px;">★★★★★</div>
+              <p style="font-style:italic; color:var(--ink);">"Booked a semi-private dinner for a birthday and the team nailed every detail, from the menu to the playlist."</p>
+              <p style="color:var(--ink-light); font-size:0.85rem; margin-top:12px;">— Sample review, replace with real feedback</p>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="card-body">
+              <div style="color:var(--pink-500); margin-bottom:12px; letter-spacing:2px;">★★★★★</div>
+              <p style="font-style:italic; color:var(--ink);">"Warm room, thoughtful staff, and a menu that actually changes with the seasons. Our new regular spot."</p>
+              <p style="color:var(--ink-light); font-size:0.85rem; margin-top:12px;">— Sample review, replace with real feedback</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Hours / location strip -->
     <section class="strip">
       <div class="container">
@@ -161,6 +179,22 @@
           <div class="ph reveal" style="aspect-ratio:1/1; border-radius:var(--radius-md);"><span>Photo: Plating</span></div>
           <div class="ph reveal" style="aspect-ratio:1/1; border-radius:var(--radius-md);"><span>Photo: Patio</span></div>
         </div>
+        <div class="text-center mt-lg">
+          <a href="gallery.html" class="btn btn-outline">See Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Private Events teaser -->
+    <section style="background:var(--pink-50);">
+      <div class="container two-col reveal">
+        <div>
+          <span class="eyebrow">Private Events</span>
+          <h2>Hosting Something Special?</h2>
+          <p style="color:var(--ink-light);">From birthday dinners to full restaurant buyouts, our events team will build a menu and room around your celebration — semi-private dining, full buyouts and cocktail receptions all available.</p>
+          <a href="events.html" class="btn btn-outline">Plan Your Event</a>
+        </div>
+        <div class="ph" style="aspect-ratio:4/3; border-radius:var(--radius-lg);"><span>Photo: Private Dining Room</span></div>
       </div>
     </section>
 
@@ -181,20 +215,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="21" cy="21" r="21" fill="#2A4E4E"/>
-              <g fill="#E28FA8">
-                <ellipse cx="21" cy="12" rx="7" ry="9"/>
-                <ellipse cx="21" cy="30" rx="7" ry="9"/>
-                <ellipse cx="12" cy="21" rx="9" ry="7"/>
-                <ellipse cx="30" cy="21" rx="9" ry="7"/>
-              </g>
-              <circle cx="21" cy="21" r="6" fill="#B84E75"/>
-            </svg>
-            <span class="logo-text">
-              <span class="logo-title">Blommas</span>
-              <span class="logo-sub">Cocktail &amp; Eatery</span>
-            </span>
+            <img src="assets/logo.png" alt="Blommas Cocktail &amp; Eatery logo" class="logo-img">
           </a>
           <p>Modern eatery &amp; cocktail bar serving seasonal small plates and craft drinks in the heart of the city.</p>
           <div class="social-row">
@@ -210,6 +231,8 @@
           <h4>Explore</h4>
           <ul>
             <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Private Events</a></li>
             <li><a href="booking.html">Reservations</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
